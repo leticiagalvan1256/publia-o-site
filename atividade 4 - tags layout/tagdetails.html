@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemplo</title>
+        <style>
+            h1 {
+                border-color:brown;
+                border-style:dashed;
+                border-width: 4px;
+                text-align: center;
+                font-family: sans-serif;
+                font-variant: small-caps;
+                width: 200px;
+                text-align: center;
+            }
+            body{
+                background-color: azure;
+            }
+            table{
+                margin: 50px;
+            }
+            .direita{
+                text-align: left;
+                
+
+            }
+            .esquerda{
+                text-align: left;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+            <h1>
+                Tag: Details
+            </h1>
+      
+        <table width="70%"  cellspacing="6">
+            <tr>
+                <td class="direita">
+                    <details>
+                        <summary>
+                             Como ele é apresentado na tela?
+                        </summary>
+                        <p>Aparece como um menu com uma seta, e se você clicar nele, abrirá o conteúdo escondido. Servindo assim para que a página fique mais "enxuto", podendo ser utilizado como tópicos.</p>
+                    </details>
+                </td>
+                <td>
+                    <details class="esquerda">
+                        <summary>
+                            Visualização de links:
+                        </summary>
+                        <p>
+                            <a href="http://www.ifto.edu.br/" target="_blank"><p>http://www.ifto.edu.br/</p></a>
+                        </p>
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td class="direita">
+                    <details open>
+                        <summary>
+                            Estado aberto (ou open State).
+                        </summary>
+                        <p>
+                            É um atributo que deixa o conteúdo de dentro da tg details exposta por padrão. Caso queira.
+                        </p>
+                    </details>
+                </td>
+                <td class="esquerda">
+                    <details>
+                    <summary>
+                        Visualização de imagens:
+                    </summary>
+                    <img src="img.jpg" width="250">
+                    </details>
+                </td>
+            </tr>
+            <tr>
+                <td class="direita">
+                    <details>
+                        <summary>
+                            O que pode ser inserido no details?
+                        </summary>
+                        Pode-se colocar dentro da tag details: imagens, links, outros details.
+                    </details>
+                </td>
+                <td class="esquerda">
+                    <details>
+                    <summary>
+                       Details dentro de outro details:
+                    </summary>
+                        <details>
+                            <summary>
+                                Outro details.
+                            </summary>
+                            <p>Conteúdo diverso...</p>
+                        </details>
+                    </details>
+                </td>
+            </tr>
+        </table> 
+        
+    </body>
+</html>
